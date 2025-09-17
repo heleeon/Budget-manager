@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Budget Manager",
+  "version": "1.0",
+  "description": "A simple extension that demonstrates the use of the chrome.storage API.",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_icon": "icon16.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "eventPage.js"
+  },
+  "options_page": "options.html",
+  "permissions": ["storage", "notifications", "contextMenus"]
+}
